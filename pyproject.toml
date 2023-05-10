@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "bulk-disasm"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "bulk_disasm"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+capstone = "^4.0.2"
+lief = "^0.13.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
